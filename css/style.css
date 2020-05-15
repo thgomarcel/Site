@@ -80,11 +80,45 @@ a:hover {
   line-height: 1.8em;
 }
 
+.portfolio {
+  padding: 2em;
+}
+
 .portfolio h2 {
   font-family: 'Press Start 2P', cursive;
+  color: whitesmoke;
+  margin-bottom: 1.5em;
+  font-size: 2em;
+}
+
+.portfolio .grid{
+  display: grid;
+  gap: 2em;
+}
+
+@media (min-width: 560px){
+  .portfolio .grid{
+    grid-template-columns: 240px 240px;
+  }
+}
+
+@media (min-width: 880px){
+  .portfolio .grid{
+    grid-template-columns: repeat(3, 240px);
+    align-content: center;
+    justify-content: center;
+    height: calc(100vh - 48px - 8em);
+  }
+}
+
+.portfolio figure{
+  text-align: center;
 }
 
 .img-portfolio {
   height: 180px;
-  width: 180px;
+  width: 240px;
+  object-fit: cover;
+  object-position: left bottom;
 }
+
