@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: gray;
+  background-image: url('../img/fundo.jpg');
   background-size: auto 100vh;
   font-family: 'Source Code Pro', monospace;
   height: 100vh;
@@ -49,7 +49,7 @@ header {
   position: fixed;
   width: 100vw;
   top: 0;
-  z-index: 1;
+  z-index: 2;
 }
 
 .menu ul {
@@ -58,10 +58,10 @@ header {
 }
 
 .menu li {
-  list-style: none;
+ list-style: none; 
 }
 
-.menu a{
+.menu a {
   display: block;
   padding: 10px 20px;
   transition: background-color 1s, color 1s;
@@ -155,7 +155,7 @@ a:hover {
 .sobre a:hover {
   background-color: cyan;
   text-decoration: none;
-  color: black;
+  color: magenta;
 }
 
 .sobre .profile {
@@ -203,7 +203,7 @@ a:hover {
 .card {
   position: relative;
   transform-style: preserve-3d;
-  transition: transform 1s;
+  transition: transform 3s;
 }
 
 .card-front, 
@@ -243,8 +243,8 @@ a:hover {
 
 .contato a{
   color: whitesmoke;
-  font-size: 2em;
-  transition: text-shadow 0.8s;
+  font-size: 4em;
+  transition: text-shadow 1s;
 }
 
 .contato a:active,
